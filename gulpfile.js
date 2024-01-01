@@ -20,6 +20,7 @@ const uglify = uglifyjs.default
 import imagemin from "gulp-imagemin"
 import recompress from "imagemin-jpeg-recompress"
 import pngquant from "imagemin-pngquant"
+// off plagins
 import svgmin from "gulp-svgmin"
 
 
@@ -121,7 +122,7 @@ const browser = () => {
 	gulp.watch("src/js/**", js)
 }
 
-export const dev = gulp.series(
+export const build = gulp.series(
 	clean,
 		gulp.parallel(
 			html,
@@ -130,4 +131,4 @@ export const dev = gulp.series(
 			img
 		)
 )
-export const change = gulp.series(dev, browser)
+export const dev = gulp.series(build, browser)
