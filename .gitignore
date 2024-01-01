@@ -4,6 +4,3 @@ package-lock.json
 
 # build foldes
 build
-
-# gulp
-gulpfile.js
