@@ -1,0 +1,9 @@
+# node_modules and npm package
+node_modules
+package-lock.json
+
+# build foldes
+build
+
+# gulp
+gulpfile.js
